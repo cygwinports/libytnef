@@ -1,0 +1,72 @@
+libytnef
+------------------------------------------
+libytnef is a library to decode TNEF streams (winmail.dat attachments) 
+like those created with Outlook.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.6-1.6.3-3
+  binutils-20080523-1
+  cygport-0.3.12-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://ytnef.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/ytnef/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libytnef-1.5-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libytnef-1.5-X.cygport all
+
+This will create:
+  /usr/src/libytnef-1.5-X-src.tar.bz2
+  /usr/src/libytnef-1.5-X.tar.bz2
+  /usr/src/libytnef-devel-1.5-X.tar.bz2
+  /usr/src/libytnef0-1.5-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libytnef0)
+  /usr/bin/cygytnef-0.dll
+  /usr/share/doc/libytnef-1.5/COPYING
+  /usr/share/doc/libytnef-1.5/ChangeLog
+  /usr/share/doc/libytnef-1.5/INSTALL
+
+(libytnef-devel)
+  /usr/include/ytnef/mapi.h
+  /usr/include/ytnef/mapidefs.h
+  /usr/include/ytnef/mapitags.h
+  /usr/include/ytnef/tnef-errors.h
+  /usr/include/ytnef/tnef-types.h
+  /usr/include/ytnef/ytnef.h
+  /usr/lib/libytnef.a
+  /usr/lib/libytnef.dll.a
+  /usr/lib/libytnef.la
+
+------------------
+
+Port Notes:
+
+----- version 1.5-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

@@ -1,0 +1,4 @@
+category: _obsolete
+sdesc: "MS-TNEF decoder library (source)"
+ldesc: "libytnef is a library to decode TNEF streams (winmail.dat 
+attachments) like those created with Outlook."
