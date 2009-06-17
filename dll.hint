@@ -1,5 +1,5 @@
-category: Libs
-requires: cygwin
+category: Mail
+requires: cygwin libgcc1
 external-source: libytnef
 sdesc: "MS-TNEF decoder library (runtime)"
 ldesc: "libytnef is a library to decode TNEF streams (winmail.dat 

@@ -1,0 +1,12 @@
+DESCRIPTION="MS-TNEF attachment decoder library"
+HOMEPAGE="http://ytnef.sourceforge.net/"
+SRC_URI="mirror://sourceforge/ytnef/${P}.tar.bz"
+PATCH_URI="1.5-no-undefined.patch"
+
+PKG_NAMES="${PN} ${PN}0 ${PN}-devel"
+PKG_HINTS="setup dll devel"
+libytnef0_CONTENTS="usr/bin/*-0.dll usr/share/doc/"
+libytnef_devel_CONTENTS="usr/include/ usr/lib/"
+
+# collision with <mapi.h> from cygwin
+CYGCONF_ARGS="--includedir=/usr/include/libytnef"

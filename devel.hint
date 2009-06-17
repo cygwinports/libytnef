@@ -1,4 +1,4 @@
-category: Libs
+category: Mail
 requires: cygwin libytnef0
 external-source: libytnef
 sdesc: "MS-TNEF decoder library (devel)"
