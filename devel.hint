@@ -1,6 +1,0 @@
-category: Mail
-requires: libytnef0
-external-source: libytnef
-sdesc: "MS-TNEF decoder library (devel)"
-ldesc: "libytnef is a library to decode TNEF streams (winmail.dat 
-attachments) like those created with Outlook."
