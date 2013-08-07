@@ -1,16 +1,16 @@
 NAME="libytnef"
 VERSION=1.5
 RELEASE=11
-CATEGORY="Mail"
+CATEGORY="Libs"
 SUMMARY="MS-TNEF attachment decoder library"
 DESCRIPTION="libytnef is a library to decode TNEF streams (winmail.dat
 attachments) like those created with Outlook."
 HOMEPAGE="http://ytnef.sourceforge.net/"
-SRC_URI="mirror://sourceforge/ytnef/${P}.tar.bz"
+SRC_URI="mirror://sourceforge/ytnef/libytnef-${VERSION}.tar.bz"
 PATCH_URI="1.5-no-undefined.patch
            http://pkgs.fedoraproject.org/cgit/libytnef.git/plain/libytnef-bufferoverflow.patch"
 
-PKG_NAMES="${PN}0 ${PN}-devel"
+PKG_NAMES="libytnef0 libytnef-devel"
 libytnef0_CONTENTS="usr/bin/*-0.dll usr/share/doc/"
 libytnef_devel_CONTENTS="usr/include/ usr/lib/"
 
